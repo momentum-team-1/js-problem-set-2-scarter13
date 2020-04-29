@@ -31,33 +31,33 @@
 
 // 3. Create a function called "sum" that takes an array of numbers and
 // returns the sum of those numbers.
-// function sum(array) {
-//     let total = 0;
-//     for (let score of array){
-//         total += score;
-//     }
-//     return total
+function sum(array) {
+    let total = 0;
+    for (let score of array){
+        total += score;
+    }
+    return total
 
-// }
+}
 
 // 4. Create a function called "average" that takes an array of numbers
 // and returns the average of those numbers.
 
-// function average(array) {
-//     let total = 0;
-//     let i = 0;
-//     for (let number of array){
-//         total += number;
-//         i++;
-//     }  return total/i
-// }
+function average(array) {
+    let total = 0;
+    let i = 0;
+    for (let number of array){
+        total += number;
+        i++;
+    }  return total/i
+}
     
 // 5. Create a function called "minimum" that takes an array of numbers and
 // returns the smallest number in that array.
 
 function minimum(array) {
     let smallest = 0;
-    for (num of array) {
+    for (let num of array) {
         if (num < smallest){
             smallest = num);
         }
@@ -91,7 +91,7 @@ function minimum(array) {
 //     var arrayCopy = array.slice(0);
 //     let sortedArray = [];
 //     let smallest = 0;
-//     for (num of arrayCopy){
+//     for (let num of arrayCopy){
 //     if (arrayCopy.length > 0){
 //         for (num of arrayCopy){
 //             if (num < smallest){

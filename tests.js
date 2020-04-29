@@ -46,48 +46,48 @@ var assert = chai.assert
 //   })
 // })
 
-// describe('sum', function () {
-//   it('returns 0 for an empty array', function () {
-//     assert.equal(0, sum([]))
-//   })
+describe('sum', function () {
+  it('returns 0 for an empty array', function () {
+    assert.equal(0, sum([]))
+  })
 
-//   it('works with only one number in the array', function () {
-//     assert.equal(5, sum([5]))
-//   })
+  it('works with only one number in the array', function () {
+    assert.equal(5, sum([5]))
+  })
 
-//   it('adds up all the numbers in an array', function () {
-//     assert.equal(15, sum([1, 2, 3, 4, 5]))
-//   })
-// })
+  it('adds up all the numbers in an array', function () {
+    assert.equal(15, sum([1, 2, 3, 4, 5]))
+  })
+})
 
-// describe('average', function () {
-//   it('returns undefined for an empty array', function () {
-//     assert.isUndefined(average([]))
-//   })
+describe('average', function () {
+  it('returns undefined for an empty array', function () {
+    assert.isUndefined(average([]))
+  })
 
-//   it('works with only one number in the array', function () {
-//     assert.equal(5, average([5]))
-//   })
+  it('works with only one number in the array', function () {
+    assert.equal(5, average([5]))
+  })
 
-//   it('returns the average of an array', function () {
-//     assert.equal(3, average([1, 2, 3, 4, 5]))
-//   })
-// })
+  it('returns the average of an array', function () {
+    assert.equal(3, average([1, 2, 3, 4, 5]))
+  })
+})
 
-// describe('minimum', function () {
-//   it('returns undefined for an empty array', function () {
-//     assert.isUndefined(minimum([]))
-//   })
+describe('minimum', function () {
+  it('returns undefined for an empty array', function () {
+    assert.isUndefined(minimum([]))
+  })
 
-//   it('returns the number for an array with one number', function () {
-//     assert.equal(1, minimum([1]))
-//   })
+  it('returns the number for an array with one number', function () {
+    assert.equal(1, minimum([1]))
+  })
 
-//   it('returns the the minimum number in an array of numbers', function () {
-//     assert.equal(1, minimum([2, 1, 3]))
-//     assert.equal(-4, minimum([7, 31, -4, 2]))
-//   })
-// })
+  it('returns the the minimum number in an array of numbers', function () {
+    assert.equal(1, minimum([2, 1, 3]))
+    assert.equal(-4, minimum([7, 31, -4, 2]))
+  })
+})
 
 // describe('selectionSort', function () {
 //   it('returns an empty array for an empty array', function () {
