@@ -6,18 +6,63 @@
 // If the potential member is not in the array, return the array unchanged.
 // If the potential member is in the array, remove all instances of it from the array.
 
+// function remove (array, member){
+//     let i = 0;   
+//     for (let name of array){
+//             if (name != member){
+//             i +=1} 
+//          else array.splice (i,1);
+//          return array}         
+
+// function remove(array, member) {
+//     let newArray = [];
+//     for (let name of array) {
+//         if (name !== member) {
+//         newArray.push(name);
+//         }
+//     }
+//     return newArray
+// }
+    
+
 // 2. Revisit your "remove" function. Make sure that it does not change the original
 // array but instead returns a new array.
 
+
 // 3. Create a function called "sum" that takes an array of numbers and
 // returns the sum of those numbers.
+// function sum(array) {
+//     let total = 0;
+//     for (let score of array){
+//         total += score;
+//     }
+//     return total
+
+// }
 
 // 4. Create a function called "average" that takes an array of numbers
 // and returns the average of those numbers.
 
+// function average(array) {
+//     let total = 0;
+//     let i = 0;
+//     for (let number of array){
+//         total += number;
+//         i++;
+//     }  return total/i
+// }
+    
 // 5. Create a function called "minimum" that takes an array of numbers and
 // returns the smallest number in that array.
 
+function minimum(array) {
+    let smallest = 0;
+    for (num of array) {
+        if (num < smallest){
+            smallest = num);
+        }
+    } return smallest
+}
 // 6. There are many techniques to sort arrays in programming. Your programming
 // language will likely include the ability to do this. We are going to
 // implement sorting ourselves, however.
@@ -42,8 +87,31 @@
 // https://courses.cs.vt.edu/csonline/Algorithms/Lessons/SelectionSort/index.html
 // to see how. This may make more sense to you.
 
+// function selectionsort (array){
+//     var arrayCopy = array.slice(0);
+//     let sortedArray = [];
+//     let smallest = 0;
+//     for (num of arrayCopy){
+//     if (arrayCopy.length > 0){
+//         for (num of arrayCopy){
+//             if (num < smallest){
+//                 smallest = num;
+//             }
+//             sortedArray.push(smallest)
+//         }
+
+//     }
+
+// }
+
+//  And I knw this won't work after looking at it ... i need to figure out how to use an index number to make the original loop start over at the first postion again.  Le sigh ... Or maybe it's a "while" loop...
+
 // 7. Create a function called `textList` that takes an array and joins its elements
 // into a string separated by commas.
 //
 // For example, `textList(['Cadence', 'Ordel', 'Marion'])` results in the string
 // `"Cadence,Ordel,Marion"`.
+function textlist (array){
+    var list = array.join();
+    return list
+}
